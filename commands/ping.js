@@ -17,7 +17,7 @@ module.exports = {
         .setColor(cor_da_embed)
         .setDescription(`**O meu ping está em \`${ping_do_bot} ms\`.**`);
 
-        let comando_desenvolvido_por_ferinha = await message.reply({ content: `${message.author}`, embeds: [embed_1] }).then(msg => {
+        let comando = await message.reply({ content: `${message.author}`, embeds: [embed_1] }).then(msg => {
             setTimeout( () => {
                 msg.edit({ content: `${message.author}`, embeds: [embed_2] })
             }, 2000)
